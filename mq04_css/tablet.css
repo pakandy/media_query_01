@@ -1,0 +1,19 @@
+ 	#bx1 {
+ 		width: 45%;
+ 	}
+ 	#bx2 {
+ 		width: 55%;
+ 	}
+	#bx3 {
+		position: static;
+		width: 99%;
+		height: 100px;
+		left: 0px;
+	}
+	#bx5 {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 1%;
+		width: 35%;
+	}

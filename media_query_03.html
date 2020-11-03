@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<!-- Program: media_query_03.html -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<!-- This program illustrates the use of external media queries -->
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Media Query 03 - link</title>
+	<link rel="stylesheet" type="text/css" href="./mq03_css/main.css">
+	<link rel="stylesheet" type="text/css" href="./mq03_css/mobile.css" media="screen and (min-width: 600px)">
+	<link rel="stylesheet" type="text/css" href="./mq03_css/tablet.css" media="screen and (min-width: 1000px)">
+</head>
+<body onresize="myFunction()">
+	<section class="outline" id="bx1">Header</section>
+	<section class="outline" id="bx2">Nav</section>
+	<section class="outline" id="bx3">Main</section>
+	<section class="outline" id="bx4">Aside</section>
+	<section class="outline" id="bx5">Footer</section>
+	<section class="block">
+		<section class="stext">CSS Media Query @Media - External</section>
+	</section>
+	<section id="out" style="line-height: 30px; text-align:center; position:fixed; top: 25px; right: 30px; width: 90px; height: 30px; border: 1px solid black; background-color: white;"></section>
+</body>
+<script>
+	myFunction();
+
+	function myFunction() {
+		document.getElementById("out").innerHTML = window.innerWidth + " / " + window.innerHeight;
+	}
+</script>
+</html>

@@ -1,0 +1,15 @@
+	#bx1 {
+		position: relative;
+		width: 35%;
+	}
+	#bx2 {
+		position: relative;
+		width: 35%;
+	}
+	#bx3 {
+		position: absolute;
+		top: 0;
+		right: 10px;
+		width: 60%;
+		height: 240px;
+	}
