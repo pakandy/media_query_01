@@ -16,6 +16,7 @@
 <meta name="description" content="Examples and exercises (syst10049)">
 <style>
   ol.b {list-style-type: lower-alpha;}
+  .sol { float: right; border:  solid 1px rgb(99, 128, 222); height: 1.25em;}
 </style>
   </head>
 
@@ -42,26 +43,55 @@
 <h2 id="complete-the-following-excercises">Complete the following excercises</h2>
 
 <ol>
-  <li>Create the HTML layout in figure 1 using:
+  <li>Download this file <a href='./inclass-practice-orig.txt'>download</a> and change it to three new layouts (see below) when the width of screen is at 600px, 850px, and 1100px respectively.
     <ul>
-      <li><code>float</code> property</li>
-      <li><code>flexbox</code></li>  
-      <li><code>CSS grid</code>
+      <li>Use Embeded Media Query, and
+      <ul>
+      <li>Float
+        <a class='sol' href='./inclass-practice-mq-float.txt'>Solution</a>
+      </li>
+      <li>CSS Flexbox</li>
+      <li>CSS Grid
+        <a class='sol' href='./inclass-practice-mq-grid.txt'>Solution</a>
+      </li>
+      </ul>
+    </li>
+    <li>Use External Media Query, and
+      <ul>
+      <li>Float</li>
+      <li>CSS Flexbox</li>
+      <li>CSS Grid</li>
+      </ul>
+    </li>
+    <li>Use @import Media Query and
+      <ul>
+      <li>Float</li>
+      <li>CSS Flexbox</li>
+      <li>CSS Grid</li>
+      </ul>
+    </li>
     </ul>
-  Choose the content and background images of your choice.
-<br><br>
- <img src="./images/practice.png" alt="HTML layout" width="100%" height="400em">
-<figcaption>Figure 1. Basic layout</figcaption><br>
-</li>
-<li>Use CSS grid to create the following HTML layout.<br>
-  <img src="./images/flex_pract1.png" alt="Flexbox HTML layout" width="50%" >
-  <figcaption>Figure 2. Flexbox HTML layout</figcaption>
-</li>
+  <div style="float: left; ">
+  <h5>Original</h5>
+  <img src='./images/prac1_orig.png' alt='Original' width="300px" height="300px">
+  </div>
+  <div style="float: right; ">
+  <h5>Layout at 600px</h5>
+  <img src='./images/prac1_grid_1.png' alt='Original' width="300px" height="300px">
+  </div>
+  <div style="float: left; ">
+    <h5>Layout at 850px</h5>
+    <img src='./images/prac1_grid_2.png' alt='Original' width="300px" height="300px">
+    </div>
+    <div style="float: right; ">
+    <h5>Layout at 1100px</h5>
+    <img src='./images/prac1_grid_3.png' alt='Original' width="300px" height="300px">
+  </div>
+  </li>
 </ol>
 
-<hr>
-
-<blockquote>
+<blockquote style="clear: both; ">
+  <hr>
   <p>Web Development @ Sheridan College</p>
 </blockquote>
         </section>
