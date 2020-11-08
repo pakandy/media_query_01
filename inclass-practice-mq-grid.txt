@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!-- Program: inclass-practice-mq-grid.html -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<!-- Media Queries using CSS grid -->
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title>Inclass Practice - MQ Grid</title>
+
+		<style>
+			.outline {
+				font-size: 18pt;
+				font-weight: normal;
+				margin: 10px 0; 
+				padding: 10px 0px ;
+				background-color: white;
+				border: thick solid purple;
+				width: 99.5%;
+				text-align: center;
+			}
+			#bx1 { background-color: red; grid-area: b1; }
+			#bx2 { grid-area: b2; background-color: rgb(75, 149, 235); }
+			#bx3 { background-color: green; grid-area: b3; }
+			#bx4 { background-color: yellow; grid-area: b4; }
+			#bx42 { background-color: rgb(228, 228, 145); grid-area: b42; }
+			#bx5 { background-color: silver; grid-area: b5; }
+			.stext {
+				font-family: Georgia;
+				font-weight: bold;
+				color: purple; 
+				font-size: 20pt;
+				text-align: center;
+			}
+			@media screen and (min-width: 1100px) {
+				.outline { margin: 5px 0; }
+				div {
+					display: grid;
+					grid-template-areas: 
+					'b1 b1 b1'
+					'b2 b3 b3'
+					'b2 b3 b3'
+					'b2 b4 b4'
+					'b2 b42 b42'
+					'b5 b5 b5';
+					grid-template-rows: 140px 140px 140px 140px 140px 120px; 
+					grid-template-columns: 35% auto;
+					column-gap: 1.5em; 
+				}
+			}
+			@media screen and (min-width: 850px) AND (max-width: 1099px) {
+				.outline { margin: 5px 0; }
+				div {
+					display: grid;
+					grid-template-areas: 
+					'b1 b1 b1'
+					'b2 b3 b3'
+					'b2 b3 b3'
+					'b2 b4 b4'
+					'b42 b42 b42'
+					'b5 b5 b5';
+					grid-template-rows: 140px 140px 140px 140px 140px 120px; 
+					grid-template-columns: 35% auto;
+					column-gap: 1.25em; 
+				}
+			}
+			@media screen and (min-width: 600px) AND (max-width: 849px) {
+				.outline { margin: 5px 0; }
+				div {
+					display: grid;
+					grid-template-areas: 
+					'b1 b1 b1'
+					'b2 b3 b3'
+					'b2 b3 b3'
+					'b4 b4 b4'
+					'b42 b42 b42'
+					'b5 b5 b5';
+					grid-template-rows: 140px 140px 140px 140px 140px 120px; 
+					grid-template-columns: 35% auto;
+					column-gap: 1.1em; 
+				}
+			}
+			@media screen and (max-width: 599px) {
+				.outline { margin: 5px 0; }
+				div {
+					display: grid;
+					grid-template-areas: 
+					'b1'
+					'b2'
+					'b3'
+					'b4'
+					'b42'
+					'b5';
+					grid-template-rows: 140px 140px 240px 140px 140px 120px; 
+				}
+			}
+
+		</style>
+	</head>
+
+	<body onresize="myFunction()">
+		<div>
+			<section class="outline" id="bx1">Header</section>
+			<section class="outline" id="bx2">Nav</section>
+			<section class="outline" id="bx3">Main</section>
+			<section class="outline" id="bx4">Aside</section>
+			<section class="outline" id="bx42">Aside</section>
+			<section class="outline" id="bx5">Footer</section>
+		</div>
+		<section>
+			<section class="stext">CSS Media Query</section>
+		</section>
+		<section id="out" style="line-height: 30px; text-align:center; position:fixed; top: 25px; right: 30px; width: 90px; height: 30px; border: 1px solid black; background-color: white;"></section>	
+
+	</body>
+	<script>
+	myFunction();
+
+	function myFunction() {
+		document.getElementById("out").innerHTML = window.innerWidth + " / " + window.innerHeight;
+	}
+	</script>
+</html>
