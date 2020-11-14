@@ -12,7 +12,6 @@
 
 <style>
 	.outline {
-/*		display: block;	*/
 		font-size: 18pt;
 		font-weight: normal;
 		margin: 10px 0px;
