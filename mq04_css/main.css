@@ -1,3 +1,4 @@
+@import url("desk.css") screen;
 @import url("mobile.css") screen and (min-width: 600px);
 @import url("tablet.css") screen and (min-width: 1000px);
 
@@ -13,21 +14,6 @@
 	width: 99%;
 	text-align: center;
 }
-#bx1 {
-	background-color: red;
-}
-#bx2 {
-	background-color: rgb(75, 149, 235);
-}
-#bx3 {
-	background-color: green;
-}
-#bx4 {
-	background-color: yellow;
-}
-#bx5 {
-	background-color: silver;
-}	
 .stext {
 	font-family: Georgia;
 	font-weight: bold;
